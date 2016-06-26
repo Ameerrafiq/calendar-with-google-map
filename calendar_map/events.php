@@ -595,12 +595,14 @@ echo '</div></nav></div>
 					    $("#warn").hide();
 					    alerttime();
 						$("#suc").html(msg);
+						window.location.reload(true);
 				 },
 				error: function(msg){
 						$("#respAlertDiv").show();
 					    $("#suc").hide();
 					    alerttime();
 						$("#warn").html(msg);
+						window.location.reload(true);
 				}
 			});
 	}
@@ -645,16 +647,20 @@ echo '</div></nav></div>
 					Longd : longd,
 				},
 				success: function(msg){
+						$("#eventinfo").modal("hide");
 						$("#respAlertDiv").show();
 					    $("#warn").hide();
 					    alerttime();
 						$("#suc").html(msg);
+						window.location.reload(true);
 				 },
 				error: function(msg){
+						$("#eventinfo").modal("hide");
 						$("#respAlertDiv").show();
 					    $("#suc").hide();
 					    alerttime();
 						$("#warn").html(msg);
+						window.location.reload(true);
 				}
 			});
 		}
@@ -678,16 +684,20 @@ echo '</div></nav></div>
 					New_Id : new_id,
 				},
 				success: function(msg){
+						$("#eventinfo").modal("hide");
 						$("#respAlertDiv").show();
 					    $("#warn").hide();
 					    alerttime();
 						$("#suc").html(msg);
+						window.location.reload(true);
 				 },
 				error: function(msg){
+						$("#eventinfo").modal("hide");
 						$("#respAlertDiv").show();
 					    $("#suc").hide();
 					    alerttime();
 						$("#warn").html(msg);
+						window.location.reload(true);
 				}
 			});
 			
