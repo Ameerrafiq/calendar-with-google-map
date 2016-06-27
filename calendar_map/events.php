@@ -93,13 +93,15 @@ echo '
 	</div>
 	<div id="confirm" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabe2" aria-hidden="true" >
 		<div class="modal-dialog modal-sm">
-		<div class="modal-body">
-		Are you sure?
-		</div>
-		<div class="modal-footer">
-		<button type="button" data-dismiss="modal" class="btn btn-primary" id="delete" onClick="deleteEvent();">Delete</button>
-		<button type="button" data-dismiss="modal" class="btn">Cancel</button>
-		</div>
+			<div class="modal-content" id="confirmbody">
+				<div class="modal-body">
+				Are you sure?
+				</div>
+				<div class="modal-footer">
+				<button type="button" data-dismiss="modal" class="btn btn-primary" id="delete" onClick="deleteEvent();">Delete</button>
+				<button type="button" data-dismiss="modal" class="btn">Cancel</button>
+				</div>
+			</div>
 		</div>
 	</div>
 <div class="modal fade" id="eventinfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
